@@ -1,0 +1,19 @@
+ul{
+  margin: 0px;
+  justify-content: center;
+  padding: 20px 0px;
+}
+li{
+  border: 1px solid blue;
+  margin: 10px;
+  width: 500px;
+  list-style: none;
+}
+.center {
+  display: flex;
+  justify-content: center;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}

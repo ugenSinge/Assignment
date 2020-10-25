@@ -1,0 +1,131 @@
+<div class="center">
+  <h2>Create new match</h2>
+</div>
+
+<div class="center">
+<form [formGroup]= "adminFixtureForm" (ngSubmit)="addFixture()">
+  <input type="date" placeholder="Date" formControlName="date"/>
+  <div class="col-sm-10">
+  <span *ngIf="adminFixtureForm.get('date').touched && adminFixtureForm.get('date').hasError('required')">
+    Date field cannot be left empty.
+  </span>
+</div>
+  <input type="time" placeholder="Time" formControlName="time"/>
+  <div class="col-sm-10">
+    <span *ngIf="adminFixtureForm.get('time').touched && adminFixtureForm.get('time').hasError('required')">
+      Please specify a time.
+    </span>
+  </div>
+
+  <!-- <input class="formcontrol" type="text" placeholder="Stadium" formControlName="stadium"/> -->
+  <select class="custom-select"formControlName="stadium">
+    <option value="" disabled>Choose your Stadium</option>
+    <option value="Changlimithang">Changlimithang</option>
+    <option value="RTC Astro Turf">RTC Astro Turf</option>
+    <option value="Bernabeu Stadium">Bernabeu Stadium</option>
+    <option value="Changjiji">Changjiji</option>
+  </select>
+  <div class="col-sm-10">
+    <span *ngIf="adminFixtureForm.get('stadium').touched && adminFixtureForm.get('stadium').hasError('required')">
+      Enter the stadium details.
+    </span>
+  </div>
+
+  <input type="text" placeholder="TicketCost" formControlName="ticketcost"/>
+  <div class="col-sm-10">
+    <span *ngIf="adminFixtureForm.get('ticketcost').touched && adminFixtureForm.get('ticketcost').hasError('required')">
+      Specify cost of ticket.
+    </span>
+  </div>
+
+  <!-- <input type="text" placeholder="Referee" formControlName="referee"/> -->
+  <select class="custom-select"formControlName="referee">
+    <option value="" disabled>Choose Referee</option>
+    <option value="Aue Supe">Aue Supe</option>
+    <option value="Dendup D">Dendup D</option>
+  </select>
+  <div class="col-sm-10">
+    <span *ngIf="adminFixtureForm.get('referee').touched && adminFixtureForm.get('referee').hasError('required')">
+      Referee must be mentioned.
+    </span>
+  </div>
+
+
+  <!-- <input type="text" placeholder="Line Man1" formControlName="linesman1"/> -->
+  <select name="line1" class="custom-select" formControlName="linesman1">
+    <option value="" disabled>Choose linesman</option>
+    <option value="Kado">Kado</option>
+    <option value="Yongba">Yongba</option>
+    <option value="Tsherty">Tsherty</option>
+    <option value="Oray">Oray</option>
+  </select>
+  <div class="col-sm-10">
+    <span *ngIf="adminFixtureForm.get('linesman1').touched && adminFixtureForm.get('linesman1').hasError('required')">
+      Provide details for match officials.
+    </span>
+  </div>
+
+  <!-- <input type="text" placeholder="Line Man2" formControlName="linesman2"/> -->
+  <select name="line1" class="custom-select" formControlName="linesman2">
+    <option value="" disabled>Choose linesman</option>
+    <option value="Kado">Kado</option>
+    <option value="Yongba">Yongba</option>
+    <option value="Tsherty">Tsherty</option>
+    <option value="Oray">Oray</option>
+  </select>
+  <div class="col-sm-10">
+    <span *ngIf="adminFixtureForm.get('linesman2').touched && adminFixtureForm.get('linesman2').hasError('required')">
+      Provide details for match officials.
+    </span>
+  </div>
+
+  <br>
+  <hr>
+
+  <h3>Team1</h3>
+  <input type="text" placeholder="Team Name" formControlName="team1">
+  <div class="col-sm-10">
+    <span *ngIf="adminFixtureForm.get('team1').touched && adminFixtureForm.get('team1').hasError('required')">
+      Enter team Name.
+    </span>
+  </div>
+  <input type="text" placeholder="Enter Manager/Coach" formControlName="managerT1"/>
+  <div class="col-sm-10">
+    <span *ngIf="adminFixtureForm.get('managerT1').touched && adminFixtureForm.get('managerT1').hasError('required')">
+      Enter team organizer details.
+    </span>
+  </div>
+  Enter Maximum 15 players:
+  <textarea formControlName="playersT1">
+  </textarea>
+  <span *ngIf="adminFixtureForm.get('playersT1').touched && adminFixtureForm.get('playersT1').hasError('required')">
+    Enter Players for team 1
+  </span>"
+  <br>
+  <hr>
+
+  <h3>Team2</h3>
+  <input type="text" placeholder="Team Name" formControlName="team2">
+  <div class="col-sm-10">
+    <span *ngIf="adminFixtureForm.get('team2').touched && adminFixtureForm.get('team2').hasError('required')">
+      Enter Team Name
+    </span>
+  </div>
+  <input type="text" placeholder="Enter Manager/Coach" formControlName="managerT2"/>
+  <div class="col-sm-10">
+    <span *ngIf="adminFixtureForm.get('managerT2').touched && adminFixtureForm.get('managerT2').hasError('required')">
+      Enter team organizer details.
+    </span>
+  </div>
+  Enter Maximum 15 players:
+  <textarea formControlName="playersT2">
+  </textarea>
+  <span *ngIf="adminFixtureForm.get('playersT2').touched && adminFixtureForm.get('playersT2').hasError('required')">
+    Enter Players for team 2
+  </span>"
+<br>
+<hr>
+<br>
+ <button class="btn btn-primary" [disabled]="!adminFixtureForm.valid" type="submit">Register</button>
+</form>
+</div>

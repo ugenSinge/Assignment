@@ -1,0 +1,36 @@
+input[type=text]:focus {
+  background-color: lightblue;
+}
+input.ng-touched.ng-invalid{
+  border:1px solid red;
+}
+span{
+  width: 80%;
+  background: red;
+}
+.agree{
+  width: 200px;
+  background-color: khaki;
+}
+form{
+  margin-top: 40px;
+  max-width: 450px;
+  margin: 0px auto;
+  padding: 20px;
+  border: 3px solid darkblue;
+  border-radius: 8px;
+}
+input{
+  margin: 10px 10px;
+  width: 85%;
+  border: 1px solid black;
+  font-size: 12px;
+  padding: 5px;
+  border-radius: 5px;
+}
+.center {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+

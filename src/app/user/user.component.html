@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+
+  <span class="navbar-text">@SELISE</span>
+  <a class="navbar-brand">{{ username }}</a>
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a routerLink="fixture" class="nav-link" routerLinkActive>Fixtures</a>
+    </li>
+    <li class="nav-item">
+      <a routerLink="ticket" class="nav-link" routerLinkActive >Book Ticket</a>
+    </li>
+    <li class="nav-item">
+      <a routerLink="wage" class="nav-link" routerLinkActive> Place Bet</a>
+    </li>
+    <li class="nav-item">
+      <button class="btn btn-primary" (click)="logout()">Log Out</button>
+    </li>
+
+
+    <!-- <li class="nav-item">
+      <a href="module/add" class="nav-link"><span class="logout">Log Out</span></a>
+    </li> -->
+    <!-- <li class="nav-item">
+      <button (Click)="logout()"><span class="logout">Log Out</span></button>
+    </li> -->
+
+
+  </ul>
+</nav>
+<router-outlet></router-outlet>

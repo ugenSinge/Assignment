@@ -1,0 +1,17 @@
+h2{
+  margin-top: 20px;
+}
+.center {
+  display: flex;
+  justify-content: center;
+}
+.container{
+  border: 1px solid black;
+  margin-bottom: 20px;
+  width: 50%;
+
+}
+h4{
+  display: flex;
+  justify-content: center;
+}

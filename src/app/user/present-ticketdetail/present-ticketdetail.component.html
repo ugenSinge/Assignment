@@ -1,0 +1,38 @@
+<div class="center">
+  <h2>Booking for Match</h2>
+</div>
+<div class="container">
+  <h2>{{fixtures.team1}}</h2> VS <h2> {{ fixtures.team2}}</h2>
+  Time: {{fixtures.time}} Date: {{fixtures.date}}
+  <hr>
+  <form [formGroup]="bookingForm" (ngSubmit)="showModel()">
+    <label>
+      Name:
+      <input type="text" formControlName="Name">
+    </label>
+    <span *ngIf="bookingForm.get('Name').touched && bookingForm.get('Name').hasError('required')">
+      All fields are mandatory!
+    </span>
+    <br>
+    <label>
+      Email:
+      <input type="email" formControlName="Email">
+    </label>
+    <span *ngIf="bookingForm.get('Email').touched && bookingForm.get('Email').hasError('required')">
+      All fields are mandatory!
+    </span>
+    <br>
+    <label>
+      Credit-card-credential:
+      <input type="text" formControlName="Credit_card_credentials">
+    </label>
+    <span *ngIf="bookingForm.get('Credit_card_credentials').touched && bookingForm.get('Credit_card_credentials').hasError('required')">
+      All fields are mandatory!
+    </span>
+    <br>
+    <p class="agree">Agree to Terms and Policy</p>
+    <input type="checkbox" formControlName="agree">
+    <br>
+    <button class="btn btn-primary" [disabled]="!bookingForm.valid" type="submit">Submit</button>
+  </form>
+</div>

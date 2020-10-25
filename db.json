@@ -1,0 +1,131 @@
+{
+  "signup": [
+    {
+      "id": 1,
+      "user_name": "superAdmin",
+      "password": "superAdmin17",
+      "permission_access": "true",
+      "access_token": "adminSpecialToken",
+      "role": "admin"
+    },
+    {
+      "user_name": "kaka",
+      "email": "ugensinge7@gmail.com",
+      "password": "hulkisbulk",
+      "permission_access": "true",
+      "role": "user",
+      "id": 2
+    },
+    {
+      "user_name": "jazzBaby",
+      "email": "jazz@yahoo.com",
+      "password": "jazzBaby",
+      "permission_access": "true",
+      "role": "user",
+      "access_token": 0.6468386116487839,
+      "id": 3
+    },
+    {
+      "user_name": "ugen",
+      "email": "ugen@hotmail.com",
+      "password": "ugenugen",
+      "permission_access": "true",
+      "role": "user",
+      "access_token": 0.775696934086006,
+      "id": 4
+    }
+  ],
+  "players": [
+    {
+      "id": 1,
+      "team_1": "Super",
+      "team_2": "Admin",
+      "email": "superAdmin@gmail.com",
+      "passwor": "superAdmin17",
+      "role": "admin",
+      "permissionAccess": true
+    }
+  ],
+  "fixtures": [
+    {
+      "date": "2020-10-07",
+      "time": "08:10",
+      "stadium": "Changlimithang",
+      "ticketcost": "890",
+      "referee": "Dendup D",
+      "linesman1": "Kado",
+      "linesman2": "Cring",
+      "team1": "Thimphu City FC",
+      "team2": "Paro United",
+      "managerT1": "Coach Tenzin",
+      "playersT1": "Jamtsho,\nTenzi,\nNungpo,\nDrakpa,",
+      "managerT2": "Sir Nayaran",
+      "playersT2": "karpola,\nkhenpga,\nneymar,\ndrakpa",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "team1": "Tensung FC",
+      "team2": "High Quality FC",
+      "date": "19/09/2020",
+      "time": "6:00PM",
+      "stadium": "Changlimithang"
+    },
+    {
+      "id": 3,
+      "team1": "Paro FC",
+      "team2": "DrukStars FC",
+      "date": "01/08/2020",
+      "time": "10:40PM",
+      "stadium": "Camp Nou"
+    },
+    {
+      "date": "2020-10-07",
+      "time": "08:10",
+      "stadium": "Bernabeu Stadium",
+      "ticketcost": "890",
+      "referee": "Dendup D",
+      "linesman1": "Kado",
+      "linesman2": "Cring",
+      "team1": "High Quality FC",
+      "team2": "Fishery Guys",
+      "managerT1": "Coach Tenzin",
+      "playersT1": "orichi,\nhatori,\ngenji,\nserizuki,",
+      "managerT2": "Sir Keza",
+      "playersT2": "karpola,\nkhenpga,\nneymar,\ndrakpa",
+      "id": 4
+    },
+    {
+      "date": "2020-09-09",
+      "time": "18:40",
+      "stadium": "Changjiji",
+      "ticketcost": "550",
+      "referee": "Aue Supe",
+      "linesman1": "Yongba",
+      "linesman2": "Tsherty",
+      "team1": "FC Tertoens",
+      "team2": "Kuruthang Boys",
+      "managerT1": "Kazuya",
+      "playersT1": "orichi,\nhatori,\ngenji,\nserizuki,",
+      "managerT2": "Aup Doma zami",
+      "playersT2": "karpola,\nkhenpga,\nneymar,\ndrakpa",
+      "id": 5
+    },
+    {
+      "date": "2020-10-21",
+      "time": "14:10",
+      "stadium": "Bernabeu Stadium",
+      "ticketcost": "454",
+      "referee": "Dendup D",
+      "linesman1": "Yongba",
+      "linesman2": "Tsherty",
+      "team1": "bakugan",
+      "team2": "Bhotay",
+      "managerT1": "Kazuya",
+      "playersT1": "orichi,\nhatori,\ngenji,\nserizuki,",
+      "managerT2": "Aup Doma zami",
+      "playersT2": "karpola,\nkhenpga,\nneymar,\ndrakpa",
+      "id": 6
+    }
+  ]
+}

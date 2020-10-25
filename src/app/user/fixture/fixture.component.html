@@ -1,0 +1,11 @@
+<div class="center"><h1>Match Fixtures</h1></div>
+<div class="center">
+
+<ul *ngIf="fixtures$ | async as fixtures">
+  <li *ngFor="let fixture of fixtures">
+    <a [routerLink]="fixture.id">
+    {{fixture.id}} | {{fixture.team1}} <span>VS</span> {{fixture.team2}}
+  </a>
+  </li>
+</ul>
+</div>

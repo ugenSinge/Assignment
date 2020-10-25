@@ -1,0 +1,14 @@
+input[type=text]:focus {
+  background-color: lightblue;
+}
+input.ng-touched.ng-invalid{
+  border:1px solid red;
+}
+span{
+  width: inherit;
+  background: #B54F40;
+}
+.agree{
+  width: 200px;
+  background-color: khaki;
+}

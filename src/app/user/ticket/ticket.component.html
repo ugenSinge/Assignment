@@ -1,0 +1,11 @@
+<div class="center"><h1>Book Ticket</h1></div>
+<div class="center">
+  <p>Select the Match you want to spectate</p>
+  <ul *ngIf="fixtures$ | async as fixtures">
+    <li *ngFor="let fixture of fixtures">
+      <a [routerLink] = "fixture.id">
+        {{fixture.team1}} VS {{fixture.team2}}
+      </a>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,10 @@
+<div class="center"><h1>Predict your Score</h1></div>
+<ul *ngIf="fixtures$ | async as fixtures">
+  <li *ngFor="let fixture of fixtures">
+    Match Day: {{fixture.date}}<br>
+    <a [routerLink]="fixture.id">
+      {{fixture.team1}} VS {{fixture.team2}}
+      <hr>
+    </a>
+  </li>
+</ul>"

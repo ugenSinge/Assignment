@@ -1,0 +1,18 @@
+<div class="center"><h1>App Users</h1></div>
+<div class="center">
+
+<ul *ngIf="users$ | async as users">
+  <li *ngFor="let user of users">
+    <!-- <a [routerLink]="users.id"> -->
+
+    UID:{{user.id}} |
+    EMAIL_ADDRESS: {{user.email}} |
+     USERNAME:{{user.user_name}} |
+     ROLE: {{ user.role}} |
+     PERMISSION_ACCESS: {{user.permission_access}}
+     <br>
+     <hr>
+  <!-- </a> -->
+  </li>
+</ul>
+</div>

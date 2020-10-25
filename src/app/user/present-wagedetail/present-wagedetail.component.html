@@ -1,0 +1,54 @@
+<h2 class="center">Place Predictions for {{fixtures.team1}} Versus {{fixtures.team2}} </h2>
+<h3 class="center">{{fixtures.team1}}'s Manager: {{fixtures.managerT1}} </h3>
+<h3 class="center">{{fixtures.team2}}'s Manager: {{fixtures.managerT2}} </h3>
+  <hr>
+  <div class="center">
+  <form [formGroup]="wageForm" (ngSubmit)="done()">
+
+    Name: <input type="text" formControlName="Name">
+    <div class="col-sm-10">
+    <span *ngIf="wageForm.get('Name').touched && wageForm.get('Name').hasError('required')">
+      Name field cannot be left empty.
+    </span>
+    </div>
+    <br>
+    Email: <input type="email" formControlName="Email">
+    <div class="col-sm-10">
+    <span *ngIf="wageForm.get('Email').touched && wageForm.get('Email').hasError('required')">
+      Email field cannot be left empty.
+    </span>
+    </div>
+    <br>
+    Credit-Card-Credentials: <input type="number" formControlName="Credit">
+    <div class="col-sm-10">
+    <span *ngIf="wageForm.get('Credit').touched && wageForm.get('Credit').hasError('required')">
+      Credit Card details are required.
+    </span>
+    </div>
+    <br>
+    Supporting-Team: <input type="text" formControlName="Team">
+    <div class="col-sm-10">
+    <span *ngIf="wageForm.get('Team').touched && wageForm.get('Team').hasError('required')">
+      Enter Supporting team name.
+    </span>
+    </div>
+    <br>
+    Score-line: <input type="text" formControlName="Score">
+    <div class="col-sm-10">
+    <span *ngIf="wageForm.get('Score').touched && wageForm.get('Score').hasError('required')">
+      Predict a scoreline.
+    </span>
+    </div>
+    <br>
+    Amount-Bidding: <input type="number" formControlName="Bid">
+    <div class="col-sm-10">
+    <span *ngIf="wageForm.get('Bid').touched && wageForm.get('Bid').hasError('required')">
+      Enter Amount to Bid.
+    </span>
+  </div>
+  <p class="agree">Agree to Terms and Policy</p>
+    <input type="checkbox" formControlName="agree">
+    <br>
+    <button class="btn btn-primary" [disabled]="!wageForm.valid" type="submit">Done</button>
+  </form>
+</div>
